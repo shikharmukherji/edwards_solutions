@@ -1,0 +1,54 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathdots}
+
+\title{Chapter 1}
+\author{Shikhar Mukherji}
+\date{June 2021}
+
+\setlength{\parindent}{0pt}
+\begin{document}
+
+\maketitle
+
+\section*{Section 1: The Vector Space $\mathbb{R}^n$}
+
+\subsection*{Exercise 1.1}
+
+Let $S$ be the set in question. Then, if $\mathbf{x}=(x_1,\dots,x_n)\in S$ and $\mathbf{y}=(y_1,\dots,y_n)\in S$, we have
+\begin{gather*}
+    a_1x_1 + \dots + a_nx_n = 0 \\
+    a_1y_1 + \dots a_ny_n = 0.
+\end{gather*}
+
+Adding these, it is clear that $\mathbf{x}+\mathbf{y}$ must belong to $S$. Finally, since $a_1(cx_1) + \dots + a_n(cx_n) = c(a_1x_1+\dots+a_nx_n) = 0$ for any real number $c$, the vector $c\mathbf{x}$ also belongs to $S$, and so it is a subspace of $\mathbb{R}^n$.
+
+\subsection*{Exercise 1.2}
+
+Let $\mathbf{x},\mathbf{y}\in V\cap W$ (observe that $\mathbf{x}$ and $\mathbf{y}$ are in both $V$ and $W$). Then, $\mathbf{x}+\mathbf{y}\in V$, since $V$ is a subspace, and similarly, $\mathbf{x}+\mathbf{y}\in W$, so that $\mathbf{x}+\mathbf{y}\in V\cap W$. By the same reasoning, for any real number $c$, the vector $c\mathbf{x}$ is also in both $V$ and $W$, so that $c\mathbf{x}\in V\cap W$.
+
+\subsection*{Exercise 1.3}
+
+Let $\mathbf{x},\mathbf{y}\in V+W$, with $\mathbf{x}=v_1 + w_1$ and $\mathbf{y} = v_2 + w_2$. Then the vector $\mathbf{x}+\mathbf{y}=(v_1+w_1)+(v_2+w_2) = (v_1+v_2)+(w_1+w_2)$ must also be in $V+W$ since $v_1+v_2\in V$ and $w_1+w_2\in W$ (note that the last equality holds since vector addition is commutative). Similarly, the vector $c\mathbf{x} = cv_1 + cw_1$ is also in $V+W$ since $cv_1\in V$ and $cw_1\in W$.
+
+\subsection*{Exercise 1.4}
+
+Let $v_1,v_2\in V$, with $v_1 = (x_1, y_1, z_1)$ and $v_2 = (x_2, y_2, z_2)$. Then
+\begin{gather*}
+    (x_1 + x_2) + 2(y_1 + y_2) = (x_1 + 2y_1) + (x_2 + 2y_2) = 0\\
+    (x_1 + x_2) + (y_1 + y_2) = (x_1+y_1) + (x_2+y_2) = 3z_1 + 3z_2 = 3(z_1+z_2),
+\end{gather*}
+which shows that $v_1+v_2\in V$. Similarly, since $cx_1 + 2(cy_1) = c(x_1+2y_1)=0$ and $cx_1 + cy_1 - 3(cz_1) = c(x_1+y_1-3z_1) = 0$, the vector $cv_1\in V$ as well.
+
+\subsection*{Exercise 1.5}
+
+First note that the sum of any differentiable functions $f,g: [0,1]\rightarrow \mathbb{R}$ is itself a differentiable real-valued function on $[0,1]$, as is the function $cf$ for any real number $c$. If $f$ and $g$ have the property that $f(0)=f(1)=0$ and $g(0)=g(1)=0$, then $(f+g)(0) = f(0)+g(0) = 0$ and $(f+g)(1) = f(1)+g(1) = 0$, so that $f+g$ has the property as well. Similarly, for the function $cf$, $(cf)(0)=cf(0)=0$ and $(cf)(1)=cf(1)=0$.\\
+
+If $f(1)$ was $1$ instead of $0$, then for any real number $c$ (apart from $1$), $(cf)(1) = cf(1)=c\neq 1$, so the set would not be closed under scalar multiplication.
+
+\subsection*{Exercise 1.1}
+
+\end{document}
