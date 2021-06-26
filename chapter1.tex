@@ -51,4 +51,62 @@ If $f(1)$ was $1$ instead of $0$, then for any real number $c$ (apart from $1$),
 
 \subsection*{Exercise 1.1}
 
+\section*{Section 2: Subspaces of $\mathbb{R}^n$}
+
+\subsection*{Exercise 2.1}
+
+Without a loss of generality (since we may reorder), suppose $v_1 = \mathbf{0}$. Then the linear combination $1v_1 + 0v_2 + 0v_3 + \dots + 0v_k$ sum to $\mathbf{0}$, and not all coefficients are zero making the set of $v_i$ linearly dependent.\\
+
+Similarly, suppose $v_1, v_2, \dots, v_r$ are linearly dependent, with $r\leq k$. This assures us of the existence of scalars $x_i$ which are not all zero so that $x_1v_1 + \dots + x_rv_r = \mathbf{0}$. But then the linear combination $x_1v_1 + \dots + x_rv_r + 0v_{r+1} + \dots + 0v_k$ sum to $\mathbf{0}$, and not all coefficients are zero making the set of $v_i$ linearly dependent.
+
+\subsection*{Exercise 2.2}
+
+We will investigate the linear independence of each set of vectors since Theorem $2.4$ tells us that a set of $n$ linearly independent vectors constitute a basis of a vector space with dimension $n$. For the set of vectors $v_1, \dots v_n$, if the equation $a_1v_1 + \dots a_nv_n=\mathbf{0}$ only has the trivial solution $a_i = 0$ for all $i$, then the vectors are a basis. If not, then they are not a basis. 
+
+\subsubsection*{(a)}
+
+\begin{gather*}
+    a_1
+    \begin{bmatrix}
+    1\\
+    0
+    \end{bmatrix}
+    +a_2
+    \begin{bmatrix}
+    1\\
+    1
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+    a_1+a_2\\
+    a_2
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+    0\\
+    0
+    \end{bmatrix}\\
+    \iff \\
+    a_1+a_2=0\\
+    a_2=0\\
+    \iff \\
+    a_1=a_2=0.
+\end{gather*}
+
+\subsubsection*{(b)}
+
+\subsubsection*{(c)}
+
+\subsubsection*{(d)}
+
+\subsection*{Exercise 2.3}
+
+\subsection*{Exercise 2.4}
+
+\subsection*{Exercise 2.5}
+
+\subsection*{Exercise 2.6}
+
+\subsection*{Exercise 2.7}
+
 \end{document}
