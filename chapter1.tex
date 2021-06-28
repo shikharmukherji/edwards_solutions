@@ -1,18 +1,4 @@
-\documentclass{article}
-\usepackage[utf8]{inputenc}
-\usepackage{amsfonts}
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{mathdots}
-
-\title{Chapter 1}
-\author{Shikhar Mukherji}
-\date{June 2021}
-
-\setlength{\parindent}{0pt}
-\begin{document}
-
-\maketitle
+\section*{Chapter 1}
 
 \section*{Section 1: The Vector Space $\mathbb{R}^n$}
 
@@ -101,12 +87,60 @@ We will investigate the linear independence of each set of vectors since Theorem
 
 \subsection*{Exercise 2.3}
 
+Observe that
+
+\[
+\begin{bmatrix}
+    1\\
+    1\\
+    1\\
+    1
+\end{bmatrix}
+=
+1\begin{bmatrix}
+    0\\
+    1\\
+    0\\
+    1
+\end{bmatrix}
++
+1\begin{bmatrix}
+    1\\
+    0\\
+    1\\
+    0
+\end{bmatrix}.
+\]
+
+Thus $V=\text{span}\left( [0,1,0,1], [1,0,1,0] \right)$, which has dimension $2$, since the two are linearly independent.
+
 \subsection*{Exercise 2.4}
+
+
 
 \subsection*{Exercise 2.5}
 
+If there were no such vectors $v_{k+1}, \dots , v_{n}$ so that $v_1, \dots, v_n$ were all linearly independent, then the dimension of $V$ must be $k$, since it is the largest number of linearly independent vectors which $V$ contains. But $k<n=\text{dim}V$ so this cannot be true.
+
 \subsection*{Exercise 2.6}
+
+Let the vectors $a_j$ be as in the text. Then the hypothesis is equivalent to the statement that $ x_1\textbf{a\textsubscript{1}} + \dots + x_n\textbf{a\textsubscript{n}}=\textbf{0} $ has only the trivial solution. Thus the vectors $a_j$ are linearly independent and so they constitute a \textit{unique} basis for $\mathbb{R}^n$ by Theorem $2.4$. This means they span $\mathbb{R}^n$ uniquely, and so the equation $x_1\textbf{a\textsubscript{1}} + \dots + x_n\textbf{a\textsubscript{n}}=\textbf{b}$ has a unique solution for each $\textbf{b}\in\mathbb{R}^n$.
 
 \subsection*{Exercise 2.7}
 
-\end{document}
+Let $\mathbf{r}=$
+
+\section*{Section 3: Inner Products and Orthogonality}
+
+\subsection*{Exercise 3.1}
+\subsection*{Exercise 3.2}
+\subsection*{Exercise 3.3}
+\subsection*{Exercise 3.4}
+\subsection*{Exercise 3.5}
+\subsection*{Exercise 3.6}
+\subsection*{Exercise 3.7}
+\subsection*{Exercise 3.8}
+\subsection*{Exercise 3.9}
+\subsection*{Exercise 3.10}
+\subsection*{Exercise 3.11}
+\subsection*{Exercise 3.12}
