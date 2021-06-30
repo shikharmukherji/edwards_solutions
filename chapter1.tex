@@ -138,9 +138,38 @@ Since the inner product is bilinear (SP $3$), we have that $\left< \mathbf{0}, \
 
 \subsection*{Exercise 3.2}
 \subsection*{Exercise 3.3}
+
+First note that for any $\mathbf{x}\in V$, $\left< \mathbf{0}, \mathbf{x} \right>=0$, so that $\mathbf{0}\in V^{\perp}$.\\
+
+Now, by the bilinearity of the inner product, $\left< \mathbf{a} + \mathbf{b}, x \right> = \left< \mathbf{a}, \mathbf{x} \right> + \left< \mathbf{b}, \mathbf{x} \right> = 0$ and $\left< r\mathbf{a}, \mathbf{x} \right> = r\left< \mathbf{a}, \mathbf{x} \right> = 0$, for each $\mathbf{a}, \mathbf{b}\in V^{\perp}$ and $r\in\mathbb{R}$.
+
 \subsection*{Exercise 3.4}
+
+Let $v\in V$. Then, since they generate $V$, we know that there exist $t_1,\dots,t_k\in\mathbb{R}$ so that $v=t_1a_1 + \dots t_ka_k$. But then $\left< x, v \right> = \left< x, t_1a_1 + \dots t_ka_k \right> = t_1\left< x, a_1 \right> + \dots + t_k\left< x, a_k \right>=0$, so that $x\in V^{\perp}$.
+
 \subsection*{Exercise 3.5}
+Observe that
+$$\left< x+y, x+y\right> = \left< x, x\right> + \left< x, y\right> + \left< y, x\right> + \left< y, y\right> = \left< x, x\right> + 2\left< x, y\right> + \left< y, y\right>,$$
+and
+$$\left< x-y, x-y\right> = \left< x, x\right> - \left< x, y\right> - \left< y, x\right> + \left< y, y\right> = \left< x, x\right> - 2\left< x, y\right> + \left< y, y\right>,$$
+so that
+$$\left< x+y, x+y\right> - \left< x-y, x-y\right> = 4\left< x,y \right>$$
+as desired.
+
 \subsection*{Exercise 3.6}
+
+First observe that
+
+$$
+\left< x,y \right> = \left< \sum_{i} t_ia_i, y \right> = \sum_{i} t_i\left< a_i,y \right> = \sum_{i} t_i\left< a_i, \sum_{j} s_ja_j  \right> = \sum_{i} \sum_{j} t_is_j \left< a_i, a_j \right>.
+$$
+
+Since the $a_r$ form an orthonormal set, $\left< a_i, a_j \right>$ is non-zero (and in fact $1$) only when $i=j$, so that the above becomes
+
+$$
+\sum_{i} t_i s_i \left< a_i, a_i\right> = \sum_{i} t_i s_i.
+$$
+
 \subsection*{Exercise 3.7}
 \subsection*{Exercise 3.8}
 \subsection*{Exercise 3.9}
