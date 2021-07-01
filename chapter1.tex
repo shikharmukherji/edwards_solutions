@@ -171,8 +171,65 @@ $$
 $$
 
 \subsection*{Exercise 3.7}
+
+Let
+\begin{align*}
+    &v_1 = (1,0,0,1)\\
+    &v_2 = (-1,0,2,1)\\
+    &v_3 = (0,1,2,0)\\
+    &v_4 = (0,0,-1,1).
+\end{align*}
+
+Then, according to the Gram-Schmidt orthogonalization process, set
+\begin{align*}
+    &w_1 \begin{aligned}[t] &= v_1\\
+        &= \left(1,0,0,1\right),\end{aligned}\\ \\
+    &w_2 \begin{aligned}[t] &= v_2 - \frac{\left< v_2, w_1 \right>}{\left< w_1, w_1 \right>}w_1\\
+        &= \left(-1,0,2,1\right), \end{aligned}\\ \\
+    &w_3 \begin{aligned}[t] &= v_3 - \frac{\left< v_3, w_1 \right>}{\left< w_1, w_1 \right>}w_1 - \frac{\left< v_3, w_2 \right>}{\left< w_2, w_2 \right>}w_2\\
+        &=\left(\frac{2}{3}, 1, \frac{10}{3}, -\frac{2}{3}\right), \end{aligned}\\ \\
+    &w_4 \begin{aligned}[t] &= v_4 - \frac{\left< v_4, w_1 \right>}{\left< w_1, w_1 \right>}w_1 - \frac{\left< v_4, w_2 \right>}{\left< w_2, w_2 \right>}w_2 - \frac{\left< v_4, w_3 \right>}{\left< w_3, w_3 \right>}w_3\\
+        &=\left(-\frac{2}{5}, \frac{2}{5}, \frac{2}{3}, \frac{2}{5}\right).\end{aligned}
+\end{align*}
+
+This set of $w_i$ suffices.
+
 \subsection*{Exercise 3.8}
+
+
+
 \subsection*{Exercise 3.9}
 \subsection*{Exercise 3.10}
 \subsection*{Exercise 3.11}
 \subsection*{Exercise 3.12}
+
+\section*{Section 4: Linear Mappings and Matrices}
+
+\subsection*{Exercise 4.1}
+
+If the mapping $f:V\rightarrow W$ satisfies both $\left(2\right)$ and $\left(3\right)$, then
+\begin{align*}
+    f(a\mathbf{x} + b\mathbf{y}) &= f(a\mathbf{x}) + f(b\mathbf{y}) \text{ (additivity)}\\
+    &= af(\mathbf{x}) + bf(\mathbf{y}) \text{ (homogeneity)},
+\end{align*}
+for each $\mathbf{x}, \mathbf{y} \in V$ and $a,b\in\mathbb{R}$, making it linear. Conversely, if $f$ is linear, then with $\mathbf{y}=\mathbf{0}$,
+$$
+f(a\mathbf{x}+b\mathbf{y}) = af(\mathbf{x}) + bf(\mathbf{y}) \implies f(a\mathbf{x}) = af(\mathbf{x}),
+$$
+making it homogeneous. Similarly, with $a=b=1$, $f$ is additive.
+
+\subsection*{Exercise 4.2}
+\subsection*{Exercise 4.3}
+\subsection*{Exercise 4.4}
+\subsection*{Exercise 4.5}
+\subsection*{Exercise 4.6}
+\subsection*{Exercise 4.7}
+\subsection*{Exercise 4.8}
+\subsection*{Exercise 4.9}
+\subsection*{Exercise 4.10}
+\subsection*{Exercise 4.11}
+\subsection*{Exercise 4.12}
+\subsection*{Exercise 4.13}
+\subsection*{Exercise 4.14}
+\subsection*{Exercise 4.15}
+\subsection*{Exercise 4.16}
